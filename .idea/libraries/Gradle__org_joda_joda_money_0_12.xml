@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.joda:joda-money:0.12">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.joda/joda-money/0.12/a8cbfa7ab3c49595fc2c5ca4664dfe15152fd06a/joda-money-0.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.joda/joda-money/0.12/7258e0694285f357549bf35c0c45bf260a27cee1/joda-money-0.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
