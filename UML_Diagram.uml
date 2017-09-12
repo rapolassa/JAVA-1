@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>CountMoney</OriginalElement>
+  <nodes>
+    <node x="0.0" y="148.0">FindWord</node>
+    <node x="0.0" y="0.0">PostDateDifference</node>
+    <node x="129.0" y="148.0">Extract</node>
+    <node x="-446.0" y="75.0">main</node>
+    <node x="104.0" y="222.0">Story</node>
+    <node x="0.0" y="70.0">CountMoney</node>
+    <node x="147.0" y="74.0">ExtractTime</node>
+    <node x="178.0" y="0.0">StringCleaner</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main" target="Extract">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main" target="CountMoney">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main" target="StringCleaner">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main" target="FindWord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main" target="ExtractTime">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main" target="Story">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="main" target="PostDateDifference">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="141.0" y="165.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
