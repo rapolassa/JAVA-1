@@ -1,0 +1,7 @@
+﻿Paima straipsnių pavadinimus iš svetainės
+Performatuoja pavadinimus
+Paima įkėlimo straipsnių datas 
+Performautoja datas
+Apjungia pavadinimus ir datas į bendrą objektą
+Apskaičiuoja straipsnio vertę
+Suranda pavadinimus kuriuose yra nurodytas žodis
