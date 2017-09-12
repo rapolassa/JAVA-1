@@ -3,19 +3,32 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
+
+task upper {
+    doLast {
+        String someString = 'RaPoLAS'
+        println "Original: " + someString
+        println "Upper case: " + someString.toUpperCase()
+    }
+}
+
+task count {
+    doLast {
+        10.times { print "$it " }
+    }
+}
+
+
 
 repositories {
     mavenCentral()
 
 }
 
-
-
-
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
     compile group: 'joda-time', name: 'joda-time', version: '2.3'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'org.joda:joda-money:0.12'
+    compile group: 'com.google.collections', name: 'google-collections', version: '1.0'
 }

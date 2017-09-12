@@ -15,7 +15,7 @@ public class main {
 
         String[] listOfTitles;
         String[] listOfTime;
-        List<Story> listOfStories = new ArrayList<Story>();
+        List<Story> listOfStories = new ArrayList<>();
         Document doc = null;
 
         try {
@@ -34,7 +34,8 @@ public class main {
             listOfTitles[i] = stringCleaner.removeParts(listOfTitles[i]);
         }
 
-        extract.getPostTime(doc, listOfTime);
+        ExtractTime time = new ExtractTime();
+        time.getPostTime(doc, listOfTime);
 
         for (int i = 0; i < listOfTime.length; i++) {
             Story story = new Story(listOfTitles[i], stringCleaner.removePartsAfter(listOfTime[i]));
@@ -48,6 +49,18 @@ public class main {
                     +" "+ countMoney.salary(postDateDifference.getDifference(story.getPostDate()), story.getPostDate()));
         }
 
+        FindWord findWord = new FindWord();
+        List<String> listOfFind = new ArrayList<>();
+        String search = "how";
+        for(Story story: listOfStories)
+        {
+            findWord.getLineWithWord(story.getTitle(), search, listOfFind);
+        }
+
+        System.out.println("----------------------------");
+        for (String found: listOfFind) {
+            System.out.println(found);
+        }
 
 
     }

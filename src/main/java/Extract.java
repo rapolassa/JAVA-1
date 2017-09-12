@@ -13,20 +13,8 @@ public class Extract {
     {
             Elements newsHeadlines = doc.select("h3");
             String html = newsHeadlines.html();
-            return html.toString().split("\\n");
+            return html.split("\\n");
     }
-
-    public String[] getPostTime(Document doc, String[] listOfTime)
-    {
-        Elements times = doc.select("time");
-        int i = 0;
-        for (Element element: times) {
-            listOfTime[i] = element.attr("datetime");
-            i++;
-        }
-        return listOfTime;
-        }
-
 
     }
 
